@@ -279,7 +279,7 @@ def start_attack_reply(message, target, port, time):
     user_info = message.from_user
     username = user_info.username if user_info.username else user_info.first_name
     
-    response = f"{username}, 𝐀𝐓𝐓𝐀𝐂𝐊 𝐒𝐓𝐀𝐑𝐓𝐄𝐃.🔥🔥\n\n𝐓𝐚𝐫𝐠𝐞𝐭: {target}\n𝐏𝐨𝐫𝐭: {port}\n𝐓𝐢𝐦𝐞: {time} 𝐒𝐞𝐜𝐨𝐧𝐝𝐬\n𝐌𝐞𝐭𝐡𝐨𝐝: VIP- User of @venomXcrazy"
+    response = f"{username}, 𝐅𝐔𝐂𝐊𝐈𝐍𝐆 𝐒𝐓𝐀𝐑𝐓𝐄𝐃.🔥\n\n𝐓𝐚𝐫𝐠𝐞𝐭: {target}\n𝐏𝐨𝐫𝐭: {port}\n𝐓𝐢𝐦𝐞: {time} 𝐒𝐞𝐜𝐨𝐧𝐝𝐬\n𝐌𝐞𝐭𝐡𝐨𝐝: VIP- User of @venomXcrazy"
     bot.reply_to(message, response)
 
 # Dictionary to store the last time each user ran the /bgmi command
@@ -341,7 +341,7 @@ def show_command_logs(message):
         except FileNotFoundError:
             response = "No command logs found."
     else:
-        response = "You Are Not Authorized To Use This Command 😡."
+        response = "You Are Not Authorized To Use This Command ."
 
     bot.reply_to(message, response)
 
@@ -373,9 +373,9 @@ Official Channel :- https://t.me/V3NOM_CH3AT
 @bot.message_handler(commands=['start'])
 def welcome_start(message):
     user_name = message.from_user.first_name
-    response = f'''❄️ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ ᴘʀᴇᴍɪᴜᴍ ᴅᴅᴏs ʙᴏᴛ, {user_name}! ᴛʜɪs ɪs ʜɪɢʜ ǫᴜᴀʟɪᴛʏ sᴇʀᴠᴇʀ ʙᴀsᴇᴅ ᴅᴅᴏs. ᴛᴏ ɢᴇᴛ ᴀᴄᴄᴇss.
-🤖Try To Run This Command : /help 
-✅BUY :- @venomXcrazy'''
+    response = f'''𝐖𝐄𝐋𝐂𝐎𝐌𝐄 {user_name} 𝐃𝐄𝐀𝐑 𝐓𝐎 𝐕𝐄𝐍𝐎𝐌 𝐃𝐃𝐎𝐒 𝐒𝐄𝐑𝐕𝐈𝐂𝐄 .
+🤖𝐓𝐑𝐘 𝐓𝐎 𝐑𝐔𝐍 /help 𝐂𝐎𝐌𝐌𝐀𝐍𝐃 𝐓𝐎 𝐊𝐍𝐎𝐖 𝐀𝐋𝐋 𝐂𝐎𝐌𝐌𝐀𝐍𝐃𝐒 
+✅𝐖𝐀𝐍𝐍𝐀 𝐔𝐒𝐄 𝐁𝐎𝐓? \n 𝐁𝐔𝐘 𝐍𝐎𝐖 :- @venomXcrazy'''
     bot.reply_to(message, response)
 
 @bot.message_handler(commands=['rules'])
